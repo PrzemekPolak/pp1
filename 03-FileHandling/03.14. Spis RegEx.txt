@@ -1,0 +1,21 @@
+a. .
+b. Poland
+c. (Poland|France|Germany)
+d. [a-zA-Z]
+e. [a-z]
+f. \d
+g.
+h. \s
+i.
+j. \d\d\d\d
+k
+l.
+m.
+n.
+o.
+p.
+q.
+r.
+s.
+t.
+u.
