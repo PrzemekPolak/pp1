@@ -4,18 +4,18 @@ c. (Poland|France|Germany)
 d. [a-zA-Z]
 e. [a-z]
 f. \d
-g.
+g. [^1234567890] ,lub [^0-9] ,lub \D
 h. \s
-i.
+i. [eyuioa]
 j. \d\d\d\d
-k
-l.
-m.
-n.
-o.
-p.
-q.
-r.
-s.
-t.
-u.
+k. [0-9,]*%
+l. [,.!:;()?"-]
+m. \w
+n. \bn[a-zA-Z]*
+o. \b\w{3}\b
+p. \b\w{5}[a-zA-Z]*
+q. [A-Z][a-zA-Z]*
+r. \bThe\b|the\b
+s. \band\b
+t. [^.]*[.]
+u. [(][^()]*[)]
