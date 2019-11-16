@@ -13,15 +13,17 @@ def mediana(tab):
         
 
 def dominanta(tab):
-    dic = {
-        'je': tab.count(1),
-        'dw': tab.count(2),
-        'tr': tab.count(3)
-        }
+    print(f'Dominanta: ',end='')
+    najwil = tab.count(max(tab, key=tab.count))
+    while tab.count(max(tab, key=tab.count)) == najwil:
+        x = max(tab, key=tab.count)
+        for i in range(najwil):
+            tab.remove(x)
+        print(f'{x}',end=' ')
+    print()
+    
+    
     
   
-  
-  
-
 mediana(tab)
 dominanta(tab)
