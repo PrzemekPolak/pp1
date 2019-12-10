@@ -4,9 +4,9 @@ c = int(input('Podaj c: '))
 
 if a != 0:
     delta = a**2 - 4*a*c
-    if a < 0:
+    if delta < 0:
         print('Brak miejsc zerowych')
-    elif a == 0:
+    elif delta == 0:
         x0 = -b / 2*a
         print(f'Miejsce zerowe x0 = {x0}')
     else:
