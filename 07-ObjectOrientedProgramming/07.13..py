@@ -1,8 +1,17 @@
 class Arrays():
+
+    znak = ','
+
     @staticmethod
-    def print_in_col(array):
-        for c in array:
-            print(c)
+    def ustal_seperator(zmieniony_znak):
+        Arrays.znak = zmieniony_znak
+
+    @staticmethod
+    def zaw_tablicy_wiersz(array):
+        tekst = ''
+        for x in array:
+            tekst = tekst + str(x) + Arrays.znak
+        print(tekst[:-1])
 
     @staticmethod
     def tworzenie_jednakowe_wartosci(liczba_elementow_tablicy,wartosc_elementow_tablicy):
@@ -20,19 +29,11 @@ class Arrays():
             tab.append(los)
         return tab
 
-    @staticmethod
-    def wyznaczanie_elementow(tablica,wartość_od,wartość_do):
-        licznik = 0
-        for x in tablica:
-            if (x >= wartość_od) and (x <= wartość_do):
-                licznik += 1
-            else:
-                continue
-        return licznik
 
-    @staticmethod
-    def zaw_tablicy_wiersz(array):
-        tekst = ''
-        for x in array:
-            tekst = tekst + str(x) + ', '
-        print(tekst[:-2])
+tablica1 = Arrays.tworzenie_jednakowe_wartosci(10,4)
+Arrays.zaw_tablicy_wiersz(tablica1)
+
+Arrays.ustal_seperator(';')
+
+tablica2 = Arrays.tworzenie_losowa_wartosc(20,-7,8)
+Arrays.zaw_tablicy_wiersz(tablica2)

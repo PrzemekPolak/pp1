@@ -3,7 +3,8 @@ class Message():
         self.message = ''
 
     def set_message(self,message):
-        message.lower()
-        message.capitalize()
-        message + 'BYE'
-        self.message = message
+        x = message 
+        x2 = x.lower()
+        x3 = x2.capitalize()
+        x3 += ' BYE.'
+        self.message = x3
