@@ -25,3 +25,12 @@ GBP = {
         }
     ]
 }
+
+print('Data         Kurs')
+print('=================')
+for x in range(4):
+    print(f'{GBP['rates'][x]['effectiveDate']}         {}')
+
+
+
+
