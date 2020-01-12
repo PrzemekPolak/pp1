@@ -26,11 +26,9 @@ GBP = {
     ]
 }
 
-print('Data         Kurs')
-print('=================')
+print('Data          Kurs')
+print('=====================')
 for x in range(4):
-    print(f'{GBP['rates'][x]['effectiveDate']}         {}')
-
-
-
-
+    pom1 = GBP['rates'][x]['effectiveDate']
+    pom2 = GBP['rates'][x]['mid']
+    print(f'{pom1}    {pom2}')
